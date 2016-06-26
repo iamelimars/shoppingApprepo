@@ -20,7 +20,7 @@ class MasterViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let checkoutButton = UIBarButtonItem(title: "Checkout!", style: UIBarButtonItemStyle.Plain, target: self, action: "checkout");
+        let checkoutButton = UIBarButtonItem(title: "Checkout!!", style: UIBarButtonItemStyle.Plain, target: self, action: "checkout");
         
         self.navigationItem.rightBarButtonItem = checkoutButton
         

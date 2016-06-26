@@ -56,9 +56,9 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nq-8K-TIH">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nq-8K-TIH">
                                 <rect key="frame" x="259" y="470" width="82" height="30"/>
-                                <state key="normal" title="Add To Cart"/>
+                                <state key="normal" title="Add To Cart!"/>
                                 <connections>
                                     <action selector="addToCartTapped:" destination="JEX-9P-axG" eventType="touchUpInside" id="gCB-It-BNn"/>
                                 </connections>

@@ -75,7 +75,7 @@ class DetailViewController: UIViewController {
                                                       success: { (responseDictionary) in
                                                        //Display message to user saying that an item  has been addded to the cart
 
-                                                        let alert = UIAlertController(title: "Added To Cart!", message: "Added Item To Cart", preferredStyle: UIAlertControllerStyle.Alert)
+                                                        let alert = UIAlertController(title: "Added To Cart!!", message: "Added Item To Cart", preferredStyle: UIAlertControllerStyle.Alert)
                                                         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
                                                         
                                                         self.presentViewController(alert, animated: true, completion: nil)
