@@ -8,12 +8,15 @@
 
 import UIKit
 import Moltin
+import SDWebImage
+
 
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var detailTitleLabel: UILabel!
     @IBOutlet weak var detailPriceLabel: UILabel!
+    @IBOutlet weak var detailimageView: UIImageView!
 
 
     var detailItem: AnyObject? {
@@ -43,8 +46,20 @@ class DetailViewController: UIViewController {
             if let price = productPrice {
                 self.detailPriceLabel?.text = price
             }
+            //set product image
+            var imageUrl = ""
             
             
+            if let images = detail.objectForKey("images") as? NSArray {
+                
+                if (images.firstObject != nil) {
+                    imageUrl = images.firstObject?.valueForKeyPath("url.https") as! String
+                }
+                
+            }
+
+            detailimageView?.sd_setImageWithURL(NSURL(string: imageUrl))
+
         }
     }
 

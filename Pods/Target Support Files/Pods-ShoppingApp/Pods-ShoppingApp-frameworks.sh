@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ShoppingApp/AFNetworking.framework"
   install_framework "Pods-ShoppingApp/Moltin.framework"
+  install_framework "Pods-ShoppingApp/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ShoppingApp/AFNetworking.framework"
   install_framework "Pods-ShoppingApp/Moltin.framework"
+  install_framework "Pods-ShoppingApp/SDWebImage.framework"
 fi

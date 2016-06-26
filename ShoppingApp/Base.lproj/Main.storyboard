@@ -63,6 +63,9 @@
                                     <action selector="addToCartTapped:" destination="JEX-9P-axG" eventType="touchUpInside" id="gCB-It-BNn"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Deo-4H-XXf">
+                                <rect key="frame" x="179" y="236" width="240" height="201"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -79,6 +82,7 @@
                         <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
                         <outlet property="detailPriceLabel" destination="hBW-5k-cZx" id="0CH-f9-h5m"/>
                         <outlet property="detailTitleLabel" destination="6K0-Wq-kI3" id="0GU-SS-5nc"/>
+                        <outlet property="detailimageView" destination="Deo-4H-XXf" id="fAG-YF-Fk8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
